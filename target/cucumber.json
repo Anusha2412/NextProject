@@ -1,0 +1,69 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "id": "search;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 167821000,
+              "error_message": "java.lang.NullPointerException\n\tat org.next.maven.pages.HomePage.getCurrentUrl(HomePage.java:9)\n\tat org.next.maven.Steps.SearchSteps.i_am_on_home_page(SearchSteps.java:22)\n\tat ✽.Given I am on home page(Search.feature:8)\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I am on home page",
+            "match": {
+              "location": "SearchSteps.i_am_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I look for product \"hoodies\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hoodies",
+                  "offset": 20
+                }
+              ],
+              "location": "SearchSteps.i_look_for_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I should be able to see all the respective products",
+            "match": {
+              "location": "SearchSteps.i_should_be_able_to_see_all_the_respective_products()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search",
+    "description": "As an end user\nI want to search for a product\nSo that I can see all the related products",
+    "id": "search",
+    "keyword": "Feature",
+    "uri": "Search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Search"
+      }
+    ]
+  }
+]
